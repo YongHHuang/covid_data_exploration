@@ -1,12 +1,5 @@
-----------COMMAND--------------------------------------------------
-
-SELECT *
-FROM Covid_Data_Exploration..covid_death
-
-----------COMMAND--------------------------------------------------
-
-SELECT *
-FROM Covid_Data_Exploration..covid_vaccination
+-- The Link to Dataset: https://ourworldindata.org/covid-deaths
+-- Thanks for the tutorial video on the Youtube channel 'Alex The Analyst': https://www.youtube.com/watch?v=qfyynHBFOsM
 
 ----------COMMAND--------------------------------------------------
 
@@ -173,5 +166,3 @@ CREATE VIEW countries_vaccination_rate AS
 		)
 	SELECT *, (accumulated_vaccination / population * 100) AS vaccination_rate
 	FROM vac_rate
-	
-----------COMMAND--------------------------------------------------
