@@ -1,5 +1,6 @@
+
 -- The Link to Dataset: https://ourworldindata.org/covid-deaths
--- Thanks for the tutorial video on the Youtube channel 'Alex The Analyst': https://www.youtube.com/watch?v=qfyynHBFOsM
+-- The project idea came from the tutorial video on Youtube channel 'Alex The Analyst': https://www.youtube.com/watch?v=qfyynHBFOsM
 
 ----------COMMAND--------------------------------------------------
 
@@ -120,8 +121,7 @@ ORDER BY 1, 2, 3
 ----------COMMAND--------------------------------------------------
 
 -- Accumulated vaccinations in Each Country
-SELECT dea.location, dea.continent, dea.date, dea.population, 
-	vac.new_vaccinations,
+SELECT dea.location, dea.continent, dea.date, dea.population, vac.new_vaccinations,
 	SUM(CAST(vac.new_vaccinations AS BIGINT)) 
 		OVER (PARTITION BY dea.location ORDER BY dea.location, dea.date) AS accumulated_vaccinaiton
 FROM Covid_Data_Exploration..covid_death dea
@@ -133,7 +133,7 @@ ORDER BY 1, 3
 
 ----------COMMAND--------------------------------------------------
 
--- Accumulated vaccination1 Rate in Each Country
+-- Accumulated vaccination Rate in Each Country
 WITH vac_rate AS
 	(
 		SELECT dea.location, dea.continent, dea.date, dea.population, vac.new_vaccinations,
@@ -152,8 +152,8 @@ ORDER BY 1, 3
 ----------COMMAND--------------------------------------------------
 
 -- Create View to store data for visualizations
-CREATE VIEW countries_vaccination_rate AS
-	WITH vac_rate AS
+CREATE VIEW Covid_Data_Exploration..countries_vaccination_rate AS
+	WITH vac_rate AS		
 		(
 			SELECT dea.location, dea.continent, dea.date, dea.population, vac.new_vaccinations,
 				SUM(CAST(vac.new_vaccinations AS BIGINT)) 
@@ -166,3 +166,60 @@ CREATE VIEW countries_vaccination_rate AS
 		)
 	SELECT *, (accumulated_vaccination / population * 100) AS vaccination_rate
 	FROM vac_rate
+
+
+
+----------------------------------------------------------------------------------------	
+-- Create 6 Tables for visualization
+----------------------------------------------------------------------------------------
+
+-- 1 Global numbers (total cases, total deaths, mortality_rate)
+SELECT 
+    SUM(new_cases) AS total_cases, 
+	SUM(CAST(new_deaths AS BIGINT)) AS total_deaths,
+	ROUND(SUM(CAST(new_deaths AS BIGINT)) / SUM(new_cases) * 100, 2) AS mortality_rate
+INTO Covid_Data_Exploration..global_numbers
+FROM Covid_Data_Exploration..covid_death
+WHERE continent IS NOT NULL
+
+
+-- 2 Total deaths each continent
+
+SELECT 
+	location,  
+	SUM(CAST(new_deaths AS INT)) AS total_deaths
+INTO Covid_Data_Exploration..continent_total_deaths
+FROM Covid_Data_Exploration..covid_death
+WHERE 
+	continent IS NULL
+	AND location IN ('Asia', 'Africa', 'Oceania', 'North America', 'South America', 'Europe')
+GROUP BY location
+
+
+--3 Max infection and infection rate for all location
+
+SELECT 
+	location, 
+	population, 
+	MAX(total_cases) AS total_cases,
+	MAX(total_cases / population) * 100 AS infection_rate
+INTO Covid_Data_Exploration..all_infection
+FROM Covid_Data_Exploration..covid_death
+GROUP BY location, population
+ORDER BY infection_rate DESC
+
+
+-- 4 Infection and infection rate for all location across time
+
+SELECT 
+	location, 
+	date, 
+	population,
+	MAX(total_cases) AS infection, 
+	MAX(total_cases / population) * 100 AS infection_rate
+INTO Covid_Data_Exploration..infection_time
+FROM Covid_Data_Exploration..covid_death
+GROUP BY location, date, population
+ORDER BY 
+	infection_rate DESC,
+	date DESC
