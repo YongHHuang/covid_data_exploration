@@ -1,7 +1,3 @@
-
--- The Link to Dataset: https://ourworldindata.org/covid-deaths
--- The project idea came from the tutorial video on Youtube channel 'Alex The Analyst': https://www.youtube.com/watch?v=qfyynHBFOsM
-
 ----------COMMAND--------------------------------------------------
 
 SELECT * 
