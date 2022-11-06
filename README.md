@@ -1,7 +1,7 @@
 # Covid Data Exploration
 
 ## Project Goal
-Explore the covid-19 dataset using Microsoft SQL Server and create the dashboard in Tableau.
+Explore the covid-19 dataset using SQL and create the dashboard in Tableau.
 
 
 ## What's in the Project
