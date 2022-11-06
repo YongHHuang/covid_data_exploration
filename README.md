@@ -13,7 +13,7 @@ Explore the covid-19 dataset using SQL and create the dashboard in Tableau.
 Microsoft SQL Server Management Studio 18 <br>
 Tableau 2022.1 <br>
 
-Our World in Data: [Coronavirus (COVID-19) Deaths](https://ourworldindata.org/covid-deaths)
+Dataset (on Our World in Data): [Coronavirus (COVID-19) Deaths](https://ourworldindata.org/covid-deaths)
 
 
 ## Explore the dataset
