@@ -1,11 +1,11 @@
 # Covid Data Exploration
 
 ## Project Goal
-Explore the covid-19 dataset using SQL and create the dashboard in Tableau.
+Explore the covid-19 dataset using SQL queries, discover trends and patterns of the pandemic , and create the dashboard in Tableau.
 
 
 ## What's in the Project
-- Explore the dataset using SQL.
+- Explore the dataset using SQL queries.
 - Create a dashboard in Tableau.
 
 
@@ -17,7 +17,7 @@ Dataset (on Our World in Data): [Coronavirus (COVID-19) Deaths](https://ourworld
 
 
 ## Explore the dataset
-Explore the cases, deaths, vaccinations, mortality rate, infection rate, vaccination rate, in different locations.
+Explore the cases, deaths, vaccinations, mortality rate, infection rate, and vaccination rate in different locations.
 
 
 ## Create a dashboard in Tableau
