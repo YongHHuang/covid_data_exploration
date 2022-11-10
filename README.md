@@ -17,7 +17,7 @@ Dataset (on Our World in Data): [Coronavirus (COVID-19) Deaths](https://ourworld
 
 
 ## Explore the dataset
-Explore the cases, deaths, vaccinations, mortality rate, infection rate, and vaccination rate in different locations.
+Inspect the trends of cases, mortality, infections, and vaccinations in different regions.
 
 
 ## Create a dashboard in Tableau
