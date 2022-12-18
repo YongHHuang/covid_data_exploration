@@ -28,5 +28,5 @@ The dashboard includes:
 - Infection rate for selected countries across time.
 
 <p align="left" width="100%">    
-    <img src="Tableau Dashboard.png">
+    <img src="dashboard 1.png">
 </p>
