@@ -30,5 +30,5 @@ The dashboard includes:
 - Relationship between GDP and fully vaccinated rate for selected area.
 
 <p align="left" width="100%">    
-    <img src="dashboard 1.png">
+    <img src="dashboard.png">
 </p>
