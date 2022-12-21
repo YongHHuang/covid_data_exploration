@@ -1,7 +1,7 @@
-# COVID-19-Global-Vaccination-Tracker
+# COVID-19 Vaccination Tracker
 
 ## Project Goal
-Discover trends and patterns of the pandemic and create a dynamic dashboard to track vaccination conditions in Tableau.
+Discover trends and patterns of the pandemic and create a dynamic dashboard to track vaccination conditions.
 
 
 ## What's in the Project
