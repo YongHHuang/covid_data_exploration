@@ -26,7 +26,8 @@ The dashboard includes:
 - Select continent and country/region.
 - Partially, fully, and not vaccinated rate pie chart for selected area.
 - Fully vaccinated rate heatmap for selected area.
-- 
+- Partially and fully vaccinated rate bar chart for selected area.
+- Relationship between GDP and fully vaccinated rate for selected area.
 
 <p align="left" width="100%">    
     <img src="dashboard 1.png">
