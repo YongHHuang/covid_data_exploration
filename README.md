@@ -24,7 +24,7 @@ Inspect the trends of cases, mortality, infections, and vaccinations in differen
 The dashboard includes:
 - Select start date and end date.
 - Select continent and country/region.
-- Partially, fully, and not vaccinated rate pie chart for selected area.
+- Population, partially, fully, and not vaccinated rate pie chart for selected area.
 - Fully vaccinated rate heatmap for selected area.
 - Partially and fully vaccinated rate bar chart for selected area.
 - Relationship between GDP and fully vaccinated rate for selected area.
