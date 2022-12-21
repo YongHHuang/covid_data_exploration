@@ -1,17 +1,17 @@
-# Covid Data Exploration
+# COVID-19-Global-Vaccination-Tracker
 
 ## Project Goal
-Explore the covid-19 dataset using SQL queries, discover trends and patterns of the pandemic , and create the dashboard in Tableau.
+Discover trends and patterns of the pandemic and create a dynamic dashboard to track vaccination conditions in Tableau.
 
 
 ## What's in the Project
 - Explore the dataset using SQL queries.
-- Create a dashboard in Tableau.
+- Create a dynamic dashboard in Tableau.
 
 
 ## Code and Resources Used
 Microsoft SQL Server Management Studio 18 <br>
-Tableau 2022.1 <br>
+Tableau 2022.3 <br>
 
 Dataset (on Our World in Data): [Coronavirus (COVID-19) Deaths](https://ourworldindata.org/covid-deaths)
 
@@ -22,10 +22,11 @@ Inspect the trends of cases, mortality, infections, and vaccinations in differen
 
 ## Create a dashboard in Tableau
 The dashboard includes:
-- Global Numbers
-- Total death for each continent
-- Global infection rate heatmap
-- Infection rate for selected countries across time.
+- Select start date and end date.
+- Select continent and country/region.
+- Partially, fully, and not vaccinated rate pie chart for selected area.
+- Fully vaccinated rate heatmap for selected area.
+- 
 
 <p align="left" width="100%">    
     <img src="dashboard 1.png">
