@@ -1,34 +1,20 @@
-# COVID-19 Vaccination Tracker
+# ***COVID-19 Vaccination Tracker***<br><br>
 
-## Project Goal
-Discover trends and patterns of the pandemic and create a dynamic dashboard to track vaccination conditions.
+## ***Software and Language***
+Tableau Public 2023.2<br>
+Microsoft SQL Server Management Studio 18
 
+## ***Project Overview***
+Use SQL to extract the necessary data and construct a dynamic Tableau dashboard to monitor vaccination status and trends.
 
-## What's in the Project
-- Explore the dataset using SQL queries.
-- Create a dynamic dashboard in Tableau.
+## ***Results***
+Users can fine-tune data by specifying start and end dates, continents, and countries. Subsequently, within the defined timeframe, the dashboard will display an overview of the selected regions' total population and vaccination rates (including partial, full, and unvaccination rates). Additionally, the dashboard features a heatmap depicting the full vaccination rate, a stacked bar chart visualizing partial and full vaccination rates, and a scatter plot illustrating the correlation between the full vaccination rate and GDP.<be>
 
+![dashboard](images/dashboard2.png)<br><br>
 
-## Code and Resources Used
-Microsoft SQL Server Management Studio 18 <br>
-Tableau 2022.3 <br>
+## ***Data Collection***
 
-Dataset (on Our World in Data): [Coronavirus (COVID-19) Deaths](https://ourworldindata.org/covid-deaths)
+Download data from the website Our World in Data: Coronavirus (COVID-19) Deaths.
+***[Coronavirus (COVID-19) Deaths](https://ourworldindata.org/covid-deaths)***
 
-
-## Explore the dataset
-Inspect the trends of cases, mortality, infections, and vaccinations in different regions.
-
-
-## Create a dashboard in Tableau
-The dashboard includes:
-- Select start date and end date.
-- Select continent and country/region.
-- Population, partially, fully, and not vaccinated rate pie chart for selected area.
-- Fully vaccinated rate heatmap for selected area.
-- Partially and fully vaccinated rate bar chart for selected area.
-- Relationship between GDP and fully vaccinated rate for selected area.
-
-<p align="left" width="100%">    
-    <img src="dashboard.png">
-</p>
+The dataset spans from January 2020 to December 2022 and encompasses vital features, including countries, tests, cases, deaths, vaccinations, age, and population.
