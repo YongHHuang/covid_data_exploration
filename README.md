@@ -5,12 +5,18 @@ Tableau Public 2023.2<br>
 Microsoft SQL Server Management Studio 18<br>
 
 ## ***Project Overview***
-Using SQL queries to extract and aggregate vital indicators for monitoring vaccination status and trends, including infection rates, mortality rates, new vaccinations, accumulated vaccinations, and more, across distinct regions.<br>
+Monitor and analyze the COVID-19 vaccination status and trends in diverse geographic regions.
 
-Afterward, export the data to Tableau and build a dynamic dashboard to present insights.<br>
+- ***Key Metrics:*** Population statistics, mortality rates, accumulated vaccinations, and vaccination rates.
+- ***Execution:*** Using SQL queries to extract and aggregate key metrics.
+- ***Dashboard Creation:*** Exporting data to Tableau and building an interactive dashboard.<br>
 
 ## ***Results***
-Users can fine-tune data by specifying start and end dates, continents, and countries. Subsequently, within the defined timeframe, the dashboard will display an overview of the selected regions' total population and vaccination rates (including partial, full, and unvaccination rates). Additionally, the dashboard features a heatmap depicting the full vaccination rate, a stacked bar chart visualizing partial and full vaccination rates, and a scatter plot illustrating the correlation between the full vaccination rate and GDP.<br>
+The dashboard will offer the following features:
+
+- ***Filters:*** Filter data by custom timeframes and specific regions.
+- ***Data Overview:*** Total population, vaccinated population, and vaccination rates (partial, full, and unvaccination).
+- ***Visualization:*** A heatmap and stacked bar chart showing vaccination rates. A scatter plot showing the relation between GDP and the vaccination rate.<br><br>
 
 ![dashboard](images/dashboard2.png)<br><br>
 
